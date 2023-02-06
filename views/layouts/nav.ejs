@@ -1,0 +1,22 @@
+<header id="header" class="row">   
+  <div class="header-logo">
+      <a href="/">Specstor Api</a>
+  </div>
+  <nav id="header-nav-wrap">
+      <ul class="header-main-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/price">Price</a></li>
+          <li><a href="/premium">Premium</a></li>
+          <% if (user) { %>
+          <li><a href="/users/profile">Profile</a></li>
+            <li><a href="/docs">Docs</a></li>
+            </ul>
+            <a href="/users/logout" class="button button-primary cta">Logout</a>
+          <% } else { %>
+            <li><a href="/users/register">Register</a></li>
+            </ul>
+            <a href="/users/login" class="button button-primary cta">Login</a>
+          <% } %> 
+  </nav>
+  <a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
+</header>
